@@ -2,7 +2,7 @@ import random
 import time
 
 def generate_prices(n):
-    prices = sorted([random.randint(1, n) for _ in range(1, n+1)])
+    prices = sorted([random.randint(1, 3 * n) for _ in range(1, n+1)])
     print(f"Preços gerados para n={n}: {prices[:10]}...")
     return prices
 
